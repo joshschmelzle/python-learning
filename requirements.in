@@ -12,8 +12,3 @@ pytest-cov
 pytest-mock
 coverage-badge
 pip-tools
-asyncio
-requests
-aiohttp[speedups]
-influxdb-client
-tomli
