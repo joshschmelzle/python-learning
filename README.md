@@ -9,3 +9,7 @@ See /asyncio.
 ## OOP
 
 See /oop.
+
+## Python Essentials 1
+
+See /pe-1.
