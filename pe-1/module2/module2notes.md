@@ -1,5 +1,78 @@
 # Module 2
 
+## Introduction
+
+Data types, variables, basic input-output operations, basic operators.
+
+This module is about writing and running simple Python programs, what Python literals, operators, and expressions are, what variables are, and how to perform basci input and output operations.
+
+The first thing we did was play with the print function.
+
+```python
+>>> print
+<built-in function print>
+>>> print()
+
+>>> print("Hello world!")
+Hello world!
+```
+
+The first "program" consists of:
+
+- the word print;
+- an opening parenthesis;
+- a quotation mark;
+- a line of text: Hello, World!;
+- another quotation mark;
+- a closing parenthesis.
+
+In this case print is the **function name**. The meaning comes from the context in which the word is used.
+
+A function in this context is a separate part of computer cost able to:
+
+- **cause some effect** like sending text to a terminal. drawing an image. playing a sound.
+- **evaluate a value** and **return it as the functions result**.
+
+Python functions may come from Python itself. These would be referred to as built-in functions.
+
+Python functions may come from add-ons named **modules**. Some modules come with Python and others may require separate installation. 
+
+Python functions may be ones that you write yourself. Placing as many functions as you want and need inside your program to make it simpler, clearer, and more elegant.
+
+The name of a function should be **significant**. For example, the name of the print function is self-evident. You should consider carefully the choice of names for functions you write.
+
+A function may have an **effect** and a **result**, but there is a third part of functions. The **argument**(s).
+
+Some Python functions don't need arguments. For syntax, Python functions strongly demand the presence of **a pair of parentheses**. Opening and closing ones.
+
+If you want to add one or more arguments to a function, you would place them **inside the parentheses**.
+
+## The `print()` function
+
+The only argument delivered to the `print()` function in this example is a **string**:
+
+```python
+print("Hello, World!")
+```
+
+The function name (**print** in this case) along with the parentheses and argument(s), forms the **function invocation**. 
+
+What happens when Python encounters an invocation like this one?
+
+```python
+function_name(argument)
+```
+
+First, Python checks to see if the name specified is **legal**. Which means Python browses the internal data in order to find an existing function of the name; if the search fails, Python aborts the code.
+
+Second, Python checks if the function's requirements for the number of arguments **allows you to invoke** the function this way. Like if a specific function demands exactly two arguments any invocation delivering only one argument will be considered erroneous, and will abort the code's execution.
+
+Third, Python **leaves your code for a moment** and jumps into the function you want to invokve.
+
+Fourth, the function **executes its code**, causes the desired effect (if any), evaluates the desired result(s) (if any) and finishes its task.
+
+Finally, Python **returns to your code** to the place just after the invocation) and resumes its execution.
+
 ## Integers
 
 Let's say numbers are handled by modern computers are of two types.
@@ -462,3 +535,31 @@ sheep += 1
 `variable op= expression`
 
 `i = i + 2 * j` == `i += 2 * j`
+
+### Leaving comments in code: why, how, and when
+
+You may want to put words in addressed not to Python but to humans. Usually to explain to other readers how the tricks in the code works. Or specific meanings of variables.
+
+A remark inserted into code is omitted at runtime and called a comment.
+
+### The input() function
+
+The `input()` function is able to read data entered by the user and return said data to the running program.
+
+Virtually all programs read and process data. A program which doesn't get a user's input is a deaf program.
+
+```python
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+```
+
+The result of `input()` is a string.
+
+### Type casting 
+
+Python offers simple functions to specify a type of data. `int()` and `float()`.
+
+`int()` takes one argument and tries to convert it to an integer. If it fails, the whole program will fail too.
+
+`float()` takes one argument and tries to convert it to a float.
